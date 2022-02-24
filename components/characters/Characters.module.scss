@@ -1,0 +1,9 @@
+@import "../../pages/variables.scss";
+
+.Characters {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: $primary;
+  color: $white;
+}

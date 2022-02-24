@@ -1,0 +1,48 @@
+@import "../../pages/variables.scss";
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding-top: 1rem;
+  background-color: $white;
+
+  .imgContainer {
+    margin-left: 1rem;
+  }
+  nav {
+    margin-right: 1rem;
+    font-weight: 700;
+    ul {
+      display: flex;
+      list-style-type: none;
+      li {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        a {
+          text-decoration: none;
+          color: $black;
+          &:hover {
+            transition: 0.3s;
+            color: orange;
+            font-weight: 700;
+          }
+        }
+        .Api {
+          background-color: orange;
+          border-radius: 0.4rem;
+          padding: 0.5rem 1rem;
+          box-sizing: border-box;
+          border: 0.15rem solid transparent;
+          &:hover {
+            transition: 0.3s;
+            background-color: $white;
+            border: 0.15rem solid orange;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}

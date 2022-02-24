@@ -1,0 +1,47 @@
+@import "../../pages/variables.scss";
+
+.Card {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  max-height: 12rem;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  background-color: $secondary;
+  border-radius: 1rem;
+  margin: 1rem;
+  .imgContainer {
+    max-width: 12rem;
+    max-height: 12rem;
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+    }
+  }
+  .textContainer {
+    margin-left: 2rem;
+    h2 {
+      margin-bottom: 0;
+      &:hover {
+        color: orange;
+        transition: 0.3s;
+      }
+    }
+    p {
+      margin-top: 0;
+    }
+    .Alive {
+      color: green;
+    }
+    .Dead {
+      color: red;
+    }
+    .unknown {
+      color: $primary;
+    }
+  }
+}

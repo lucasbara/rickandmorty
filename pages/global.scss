@@ -1,0 +1,11 @@
+@import "./variables.scss";
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $primary;
+  * {
+    box-sizing: border-box;
+  }
+}
